@@ -1,0 +1,5 @@
+mongoexport --host localhost:27017 --db shutterstore --collection customer --forceTableScan
+
+mongo --host localhost:27017
+
+docker run  -p 27017:27017 mongo
