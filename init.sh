@@ -7,4 +7,4 @@ mongoimport --host localhost:27017 --db shutterstore --collection customer  data
 
 npm install
 npm --prefix frontend install
-npm --prefix frontend build
+npm --prefix frontend run-script build
