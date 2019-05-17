@@ -1,54 +1,96 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
-import ReactDOM from "react-dom";
+import './dispatcher';
+import dispatcher from "./dispatcher";
+import Card from './BootstrapUtil'
+import Navbar from './Navbar'
+import Customer from './Customer'
 
+class App extends React.Component {
+    state = {
+        title: ""
+    };
 
-let asd = 'i';
+    capitalize = (s) => {
+        if (typeof s !== 'string') return ''
+        return s.charAt(0).toUpperCase() + s.slice(1)
+    };
 
-function App() {
-    return (
-        <div>
-            <Navbar></Navbar>
-            <Conditional name={asd}></Conditional>
-        </div>
-    );
-}
-
-function Navbar() {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="navbar-brand">ShutterStore</div>
-            <button className="">Customer</button>
-            <div className="nav-link" onClick={asd='a'}>Worker</div>
-            <div className="nav-link">Managern</div>
-        </nav>
-    );
-}
-
-class Conditional extends React.Component {
-    constructor(){
-        super()
-        this.state = {};
-        this.state.yolo = 'b'
+    constructor(props) {
+        super(props);
+        dispatcher.register(payload => {
+            if(payload.actionType === 'page-select') {
+                this.setState({title: this.capitalize(payload.selectedPage)})
+            }
+        });
     }
 
-    asdf() {
-        ReactDOM.render(
-            <Conditional></Conditional>,
-            document.getElementById('root')
-        );
-        this.state.yolo = 'a'
-    }
     render() {
         return (
             <div>
-                <div>Hello {this.props.name}</div>
-                <div>Hello {this.state.yolo}</div>
-                <div onClick={this.asdf}>Yolo</div>
+                <Navbar></Navbar>
+                <br />
+                <div className="container">
+                    <Card title={this.state.title} component={Display}></Card>
+                </div>
             </div>
         );
+    };
+}
+
+class Display extends React.Component {
+
+    state = {
+        selected: "customer"
+    };
+
+    constructor() {
+        super();
+        dispatcher.register(payload => {
+            if(payload.actionType === 'page-select') {
+                this.setState({selected: payload.selectedPage});
+            }
+        });
+
+        dispatcher.dispatch({
+            actionType: "page-select",
+            selectedPage: "customer"
+        });
     }
+
+    render() {
+        switch (this.state.selected){
+            case "customer":
+                return (
+                    <Customer></Customer>
+                )
+            case "worker":
+                return (
+                    <Worker></Worker>
+                )
+            case "manager":
+                return (
+                    <Manager></Manager>
+                )
+            default:
+                return (
+                    <div className="spinner-border"></div>
+                );
+        }
+    }
+}
+
+function Worker(){
+    return (
+        <div>Worker</div>
+    )
+}
+
+function Manager(){
+    return (
+        <div>Manager</div>
+    )
 }
 
 export default App;
