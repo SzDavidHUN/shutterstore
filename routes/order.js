@@ -15,7 +15,17 @@ router.get('/all', (req, res) => {
     });
 });
 
-router.get('/id/:id', (req, res) => {
+router.get('/inprogress', (req, res) => {
+    orderService.getOrdersInProgress( (orders, err) => {
+        if(err) {
+            res.status(500).send(err);
+            return;
+        }
+        res.status(200).send(orders);
+    });
+});
+
+router.get('/customerid/:id', (req, res) => {
     if(!req.params.id){
         res.status(400).send('Missing customerID');
         return;

@@ -35,6 +35,12 @@ class OrderService {
         })
     }
 
+    getOrdersInProgress(callback){
+        this.orderDao.getOrdersInProgress((orders, err) => {
+            callback(orders, err);
+        })
+
+    }
 }
 
 module.exports = OrderService

@@ -33,6 +33,17 @@ class OrderDao {
         });
     }
 
+    getOrdersInProgress(callback){
+        const mongoclient = new MongoClient(this.url);
+        mongoclient.connect((err, client) => {
+            let db = client.db("shutterstore");
+            db.collection('order').find({assembled: false}).toArray((err, docs) => {
+                callback(docs, err);
+            });
+        });
+
+    }
+
 }
 
 module.exports = OrderDao;
