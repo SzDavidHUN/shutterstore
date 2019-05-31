@@ -16,8 +16,6 @@ router.put('/new', (req, res) => {
 
 router.get('/all', (req, res) => {
     customerService.getAllCustormers((docs) => {
-        console.log('Docs: ');
-        console.log(docs);
         res.send(docs);
     });
 });

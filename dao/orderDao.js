@@ -2,12 +2,12 @@ const MongoClient = require('mongodb').MongoClient;
 
 class OrderDao {
     constructor() {
-        const url = 'mongodb://localhost:27017';
-        this.mongoclient = new MongoClient(url);
+        this.url = 'mongodb://localhost:27017';
     }
 
     getAllOrders(callback) {
-        this.mongoclient.connect((err, client) => {
+        const mongoclient = new MongoClient(this.url);
+        mongoclient.connect((err, client) => {
             let db = client.db("shutterstore");
             db.collection('order').find().toArray((err, docs) => {
                 callback(docs, err);
@@ -16,7 +16,8 @@ class OrderDao {
     }
 
     saveOrder(order, callback) {
-        this.mongoclient.connect((err, client) => {
+        const mongoclient = new MongoClient(this.url);
+        mongoclient.connect((err, client) => {
             let db = client.db("shutterstore");
             db.collection('order').insertOne(order, {}, (err) => {
                 callback(err);
@@ -25,7 +26,8 @@ class OrderDao {
     }
 
     getOrdersForCustomer(customerID, callback) {
-        this.mongoclient.connect((err, client) => {
+        const mongoclient = new MongoClient(this.url);
+        mongoclient.connect((err, client) => {
             let db = client.db("shutterstore");
             db.collection('order').find({customerID: customerID}).toArray((err, docs) => {
                 callback(docs, err);
@@ -33,7 +35,7 @@ class OrderDao {
         });
     }
 
-    getOrdersInProgress(callback){
+    getOrdersInProgress(callback) {
         const mongoclient = new MongoClient(this.url);
         mongoclient.connect((err, client) => {
             let db = client.db("shutterstore");
@@ -41,9 +43,35 @@ class OrderDao {
                 callback(docs, err);
             });
         });
-
     }
 
+    getOrdersByID(orderid, callback) {
+        const mongoclient = new MongoClient(this.url);
+        mongoclient.connect((err, client) => {
+            let db = client.db("shutterstore");
+            db.collection('order').find({id: orderid}).toArray((err, docs) => {
+                callback(docs, err);
+            });
+        });
+    }
+
+    updateOrder(order, callback) {
+        const mongoclient = new MongoClient(this.url);
+        mongoclient.connect((err, client) => {
+            let db = client.db("shutterstore");
+            db.collection('order').updateOne({id: order.id}, {$set: {invoice: order.invoice}}, {},(err) => {
+                callback(err);
+            });
+        });
+    }
+
+    setInvoice(orderid, invoiceid, callback) {
+        this.getOrdersByID(orderid, (docs, err) => {
+            const order = docs[0];
+            order.invoice = invoiceid;
+            this.updateOrder(order, callback);
+        })
+    }
 }
 
 module.exports = OrderDao;
