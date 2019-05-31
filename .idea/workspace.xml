@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2e6f18d-2809-469b-b6ee-f4a23ec1d2c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/invoice.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/invoiceDao.js" beforeDir="false" afterPath="$PROJECT_DIR$/dao/invoiceDao.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/orderDao.js" beforeDir="false" afterPath="$PROJECT_DIR$/dao/orderDao.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/customer.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/customer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/order.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/order.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/action/InvoiceActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/action/InvoiceActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/action/OrderActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/action/OrderActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/CreateInvoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/CreateInvoice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/EditOrder.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/EditOrder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/ShowCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ShowCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/ViewInvoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ViewInvoice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/component/ViewOrder.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ViewOrder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/constants/ActionConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/constants/ActionConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/constants/RouterConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/constants/RouterConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/dispatcher/ApplicationDispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/dispatcher/ApplicationDispatcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/init.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/invoiceRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/invoiceRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/orderRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/orderRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/invoiceService.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/invoiceService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/orderService.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/orderService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/useful_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/useful_commands.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,55 +18,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/invoiceRoute.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-66">
-              <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/orderRouter.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="309">
-              <caret line="93" column="23" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/orderService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+              <caret line="93" column="45" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dao/orderDao.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/component/ViewOrder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="79" column="77" selection-start-line="79" selection-start-column="77" selection-end-line="79" selection-end-column="77" />
+            <state relative-caret-position="105">
+              <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/invoiceDao.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/action/OrderActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="45" column="27" lean-forward="true" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+            <state relative-caret-position="256">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/enity/order.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/dispatcher/ApplicationDispatcher.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="172">
+              <caret line="172" column="21" lean-forward="true" selection-start-line="172" selection-start-column="21" selection-end-line="172" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,6 +95,8 @@
       <find>Link={</find>
       <find>customer</find>
       <find>updateOne</find>
+      <find>mark</find>
+      <find>markas</find>
     </findStrings>
     <replaceStrings>
       <replace>order</replace>
@@ -179,11 +148,11 @@
         <option value="$PROJECT_DIR$/init.sh" />
         <option value="$PROJECT_DIR$/frontend/src/constants/ActionConstants.js" />
         <option value="$PROJECT_DIR$/frontend/src/dispatcher/ApplicationDispatcher.js" />
-        <option value="$PROJECT_DIR$/frontend/src/action/OrderActions.js" />
-        <option value="$PROJECT_DIR$/frontend/src/component/ViewOrder.js" />
         <option value="$PROJECT_DIR$/routes/orderRouter.js" />
         <option value="$PROJECT_DIR$/service/orderService.js" />
         <option value="$PROJECT_DIR$/dao/orderDao.js" />
+        <option value="$PROJECT_DIR$/frontend/src/action/OrderActions.js" />
+        <option value="$PROJECT_DIR$/frontend/src/component/ViewOrder.js" />
       </list>
     </option>
   </component>
@@ -214,11 +183,6 @@
               <item name="shutterstore" type="b2602c69:ProjectViewProjectNode" />
               <item name="shutterstore" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shutterstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shutterstore" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shutterstore" type="b2602c69:ProjectViewProjectNode" />
@@ -285,7 +249,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="11.15.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebTechnologies2/sakila-example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -361,6 +325,7 @@
       <workItem from="1559293504932" duration="6000" />
       <workItem from="1559293664752" duration="339000" />
       <workItem from="1559294134901" duration="5125000" />
+      <workItem from="1559302268844" duration="903000" />
     </task>
     <task id="LOCAL-00001" summary="Very simple frontend.">
       <created>1558072349584</created>
@@ -387,19 +352,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117963000" />
+    <option name="totallyTimeSpent" value="118866000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1448" height="856" extended-state="6" />
+    <frame x="0" y="-1" width="1366" height="739" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2554693" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25539836" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286385" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29395604" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29268292" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -530,13 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enity/invoice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
@@ -590,13 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/constants/RouterConstants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/action/InvoiceActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -634,9 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/invoice.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/customer.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -670,51 +618,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/action/OrderActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/component/ViewOrder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/data/invoice.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/invoiceRoute.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        <state relative-caret-position="15">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/dispatcher/ApplicationDispatcher.js">
+    <entry file="file://$PROJECT_DIR$/enity/invoice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="172" column="21" lean-forward="true" selection-start-line="172" selection-start-column="21" selection-end-line="172" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/orderRouter.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/constants/RouterConstants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="93" column="23" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="32" />
+        <state relative-caret-position="120">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service/orderService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
-          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/orderDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/invoiceDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -725,17 +670,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/invoiceDao.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/dispatcher/ApplicationDispatcher.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="45" column="27" lean-forward="true" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+        <state relative-caret-position="172">
+          <caret line="172" column="21" lean-forward="true" selection-start-line="172" selection-start-column="21" selection-end-line="172" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/orderDao.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/action/OrderActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="79" column="77" selection-start-line="79" selection-start-column="77" selection-end-line="79" selection-end-column="77" />
+        <state relative-caret-position="256">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/orderRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="93" column="45" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/component/ViewOrder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

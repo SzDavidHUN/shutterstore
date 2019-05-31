@@ -40,7 +40,7 @@ class ViewOrder extends React.Component {
             <div>
                 <h1>View Order</h1>
                 <div><b>ID:</b> {this.props.match.params.id}</div>
-                <div><b>Invoice ID:</b> {this.props.match.params.invoice}</div>
+                <div><b>Invoice ID:</b> {this.state.order.invoice}</div>
                 <div><b>Submitted:</b> {this.state.order.date}</div>
                 <div><b>Assembly:</b> {this.state.order.assembled ? (<span>Assembled</span>) : (
                     <span>Assembly is in progress</span>)}</div>
