@@ -28,4 +28,8 @@ app.use('/customer', customerRouter);
 app.use('/order', orderRouter);
 app.use('/invoice', invoiceRouter);
 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/frontend/build/index.html'));
+});
+
 module.exports = app;

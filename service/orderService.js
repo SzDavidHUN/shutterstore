@@ -79,6 +79,10 @@ class OrderService {
     setInvoice(orderid, invoiceid, callback){
         this.orderDao.setInvoice(orderid, invoiceid, callback);
     }
+
+    markAsAssembled(orderid, callback){
+        this.orderDao.markAsAssembled(orderid, callback);
+    }
 }
 
 module.exports = OrderService

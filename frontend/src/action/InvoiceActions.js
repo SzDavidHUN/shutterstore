@@ -10,6 +10,13 @@ export default class InvoiceActions {
         });
     }
 
+    payInvoice(id) {
+        ApplicationDispatcher.dispatch({
+            actionType: ActionConstants.PAY_INVOICE,
+            id: id
+        });
+    }
+
     getInvoiceByID(id){
         ApplicationDispatcher.dispatch({
             actionType: ActionConstants.GET_INVOICE_BY_ID,

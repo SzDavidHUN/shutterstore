@@ -17,6 +17,7 @@ class ViewOrder extends React.Component {
         super(props);
         this.onChange = this.onChange.bind(this);
         ordersResultStore.addChangeListener(this.onChange);
+        this.onMarkAssembled = this.onMarkAssembled.bind(this);
     }
 
     componentWillMount() {
@@ -27,6 +28,11 @@ class ViewOrder extends React.Component {
     onChange() {
         this.setState({order: ordersResultStore.results[0]});
         console.log(this.state)
+    }
+
+    onMarkAssembled(){
+        orderActions.markAsAssembled(this.props.match.params.id)
+        orderActions.getOrderByID(this.props.match.params.id)
     }
 
     render() {
@@ -49,7 +55,7 @@ class ViewOrder extends React.Component {
                             {
                                 this.state.order.invoice ? (
                                     <LinkButton text="View invoice"
-                                                link={VIEW_INVOICE_PREFIX + this.state.order.invoice}/>
+                                                link={VIEW_INVOICE_PREFIX + this.state.order.invoice + '/manager'}/>
                                 ) : <LinkButton text="Create invoice"
                                                 link={CREATE_INVOICE_PREFIX + this.props.match.params.id}/>
                             }
@@ -59,7 +65,7 @@ class ViewOrder extends React.Component {
                 {
                     this.props.match.params.role === 'worker' ? (
                         <div>
-                            <Button text="Mark as assembled"/>
+                            <Button text="Mark as assembled" onClick={this.onMarkAssembled} />
                         </div>
                     ) : null
                 }
@@ -69,7 +75,7 @@ class ViewOrder extends React.Component {
                             {
                                 this.state.order.invoice ? (
                                     <LinkButton text="View invoice"
-                                                link={VIEW_INVOICE_PREFIX + this.state.order.invoice}/>
+                                                link={VIEW_INVOICE_PREFIX + this.state.order.invoice + '/customer'}/>
                                 ) : <div className="btn btn-secondary disabled">Invoice is not yet available</div>
                             }
 

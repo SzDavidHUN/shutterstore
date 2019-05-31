@@ -27,4 +27,8 @@ InvoiceService.prototype.getInvoiceByID = (invoiceID, callback) => {
     invoiceDao.getInvoiceByID(invoiceID, callback);
 };
 
+InvoiceService.prototype.payInvoiceByID = (invoiceID, callback) => {
+    invoiceDao.payInvoiceByID(invoiceID, callback);
+};
+
 module.exports = InvoiceService;

@@ -189,7 +189,7 @@ function FormTextInput(props) {
             <label htmlFor={props.id}>{props.name}</label>
             <input type={props.type} className="form-control" id={props.id} name={props.id}
                    aria-describedby={props.id + 'help'}
-                   placeholder={props.placeholder} value={props.value} onChange={props.onInvoiceChange}/>
+                   placeholder={props.placeholder} value={props.value} onChange={props.onChange}/>
             <small id={props.id + 'help'} className="form-text text-muted">{props.help}</small>
         </div>
     )
@@ -202,7 +202,7 @@ function FormTextInputInline(props) {
             <div className="col-sm-1"/>
             <input type={props.type} className="form-control col-sm-8" id={props.id} name={props.id}
                    aria-describedby={props.id + 'help'}
-                   placeholder={props.placeholder} value={props.value} onChange={props.onInvoiceChange}/>
+                   placeholder={props.placeholder} value={props.value} onChange={props.onChange}/>
             <small id={props.id + 'help'} className="form-text text-muted">{props.help}</small>
         </div>
     )

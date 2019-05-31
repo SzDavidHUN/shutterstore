@@ -3,3 +3,8 @@ mongoexport --host localhost:27017 --db shutterstore --collection customer --for
 mongo --host localhost:27017
 
 docker run  -p 27017:27017 mongo
+
+
+mongoexport --host localhost:27017 --db shutterstore --collection customer --forceTableScan -o data/customer.json
+mongoexport --host localhost:27017 --db shutterstore --collection order --forceTableScan -o data/order.json
+mongoexport --host localhost:27017 --db shutterstore --collection invoice --forceTableScan -o data/invoice.json

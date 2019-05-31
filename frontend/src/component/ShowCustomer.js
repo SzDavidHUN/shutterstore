@@ -40,7 +40,6 @@ class ShowCustomer extends React.Component {
             customer: cusomerResultStore.result,
             orders: orderResultStore.results
         });
-        console.log(this.state.customer)
     }
 
     render() {

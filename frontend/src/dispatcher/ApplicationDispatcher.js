@@ -109,6 +109,9 @@ dispatcher.register((payload) => {
         return;
     axios.get('http://localhost:3000/order/id/' + payload.orderID).then(data => {
         ordersResultStore.setResults({result: data.data})
+    }).catch((e) => {
+        alert(e);
+        alert(e.response.data);
     })
 });
 
@@ -148,3 +151,30 @@ dispatcher.register((payload) => {
         InvoiceStore.setResult({result: data.data[0]})
     })
 });
+
+dispatcher.register((payload) => {
+    if (payload.actionType !== ActionConstants.PAY_INVOICE)
+        return;
+    axios.get('http://localhost:3000/invoice/pay/' + payload.id).then(data => {
+        alert('Invoice paid succesfully!');
+    }).catch((e) => {
+        alert(e);
+        alert(e.response.data);
+        console.log(e);
+        console.log(e.response);
+    })
+});
+
+dispatcher.register((payload) => {
+    if (payload.actionType !== ActionConstants.MARK_AS_ASSEMBLED)
+        return;
+    axios.get('http://localhost:3000/order/assebled/' + payload.id).then(data => {
+        alert('Order marked as assembled!');
+    }).catch((e) => {
+        alert(e);
+        alert(e.response.data);
+        console.log(e);
+        console.log(e.response);
+    })
+});
+

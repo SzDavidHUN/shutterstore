@@ -72,6 +72,16 @@ class OrderDao {
             this.updateOrder(order, callback);
         })
     }
+
+    markAsAssembled(orderid, callback)  {
+        const mongoclient = new MongoClient(this.url);
+        mongoclient.connect((err, client) => {
+            let db = client.db("shutterstore");
+            db.collection('order').updateOne({id: orderid}, {$set: {assembled: true}}, {},(err) => {
+                callback(err);
+            });
+        });
+    };
 }
 
 module.exports = OrderDao;

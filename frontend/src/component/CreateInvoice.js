@@ -49,12 +49,11 @@ class CreateInvoice extends React.Component {
         this.setState({
             customer: customerResultStore.result
         });
-        console.log(customerResultStore.result);
-        console.log(this.state.customer);
     }
 
     onPriceChange(event) {
-        this.setState({price: parseInt(event.target.value)})
+        this.setState({price: parseInt(event.target.value)});
+        console.log(event.target.value);
     }
 
     createInvoice() {
@@ -101,7 +100,7 @@ function FormTextInput(props) {
             <label htmlFor={props.id}>{props.name}</label>
             <input type={props.type} className="form-control" id={props.id} name={props.id}
                    aria-describedby={props.id + 'help'}
-                   placeholder={props.placeholder} value={props.value} onChange={props.onInvoiceChange}/>
+                   placeholder={props.placeholder} value={props.value} onChange={props.onChange}/>
             <small id={props.id + 'help'} className="form-text text-muted">{props.help}</small>
         </div>
     )

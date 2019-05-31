@@ -27,6 +27,16 @@ InvoiceDao.prototype.getInvoiceByID = (invoiceID, callback) => {
     });
 };
 
+InvoiceDao.prototype.payInvoiceByID = (invoiceID, callback) => {
+    const mongoclient = new MongoClient(url);
+    mongoclient.connect((err, client) => {
+        let db = client.db("shutterstore");
+        db.collection('invoice').updateOne({id: invoiceID}, {$set: {paid: true}}, {},(err) => {
+            callback(err);
+        });
+    });
+};
+
 InvoiceDao.prototype.storeNewInvoice = (invoice, callback) => {
     const mongoclient = new MongoClient(url);
     mongoclient.connect((err, client) => {

@@ -13,5 +13,7 @@ module.exports = {
     GET_ORDER_BY_ID: 'get-order-by-id',
     REGISTER_CUSTOMER: 'register-customer',
     CREATE_INVOICE: 'create-invoice',
-    GET_INVOICE_BY_ID: 'get-invoice-by-id'
+    GET_INVOICE_BY_ID: 'get-invoice-by-id',
+    PAY_INVOICE: 'pay-invoice',
+    MARK_AS_ASSEMBLED: 'mark-as-assembled'
 };

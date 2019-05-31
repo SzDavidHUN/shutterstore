@@ -86,4 +86,18 @@ router.get('/id/:id', (req, res) => {
     //res.status(200).send();
 });
 
+router.get('/assebled/:id', (req, res) => {
+    if (!req.params.id) {
+        res.status(400).send('ID is missing!');
+        return;
+    }
+    orderService.markAsAssembled(req.params.id, (docs, err) => {
+        if (err) {
+            res.status(500).send(err);
+            return;
+        }
+        res.status(200).send(docs);
+    })
+});
+
 module.exports = router;

@@ -29,6 +29,20 @@ router.get('/id/:id', (req, res) => {
     })
 });
 
+router.get('/pay/:id', (req, res) => {
+    if (!req.params.id) {
+        res.status(400).send('ID is missing!');
+        return;
+    }
+    invoiceService.payInvoiceByID(req.params.id, (invoices, err) => {
+        if (err) {
+            res.status(500).send(err);
+            return;
+        }
+        res.status(200).send(invoices);
+    })
+});
+
 router.put('/new', (req, res) => {
     if (!req.body.customerID) {
         res.status(400).send('CustomerID is missing!');

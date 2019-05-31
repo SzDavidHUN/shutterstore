@@ -13,6 +13,6 @@ module.exports = {
     VIEW_ORDER_SUFFIX_CUSTOMER: '/customer',
     CREATE_INVOICE_ROUTE: '/createInvoice/:orderid',
     CREATE_INVOICE_PREFIX: '/createInvoice/',
-    VIEW_INVOICE_ROUTE: "/viewInvoice/:id",
+    VIEW_INVOICE_ROUTE: "/viewInvoice/:id/:role",
     VIEW_INVOICE_PREFIX: "/viewInvoice/",
 };

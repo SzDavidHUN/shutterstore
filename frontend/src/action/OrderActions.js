@@ -14,4 +14,11 @@ export default class OrderActions {
             orderID: orderID
         })
     }
+
+    markAsAssembled(orderID) {
+        ApplicationDispatcher.dispatch({
+            actionType: ActionConstants.MARK_AS_ASSEMBLED,
+            orderID: orderID
+        })
+    }
 }
