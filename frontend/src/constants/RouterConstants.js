@@ -1,0 +1,18 @@
+module.exports = {
+    CUSTOMER_LOGIN_LINK: '/login',
+    SHOW_CUSTOMER_BY_ID_PREFIX: '/showCustomer/',
+    SHOW_CUSTOMER_BY_ID_ROUTE: '/showCustomer/:id',
+    WORKER_LIST_ORDERS: '/worker',
+    MANAGER_LIST_ORDERS: '/manager',
+    NEW_ORDER_ROUTER: '/createOrder/:id',
+    NEW_ORDER_PREFIX: '/createOrder/',
+    VIEW_ORDER_ROUTER: '/viewOrder/:id/:role',
+    VIEW_ORDER_PREFIX: '/viewOrder/',
+    VIEW_ORDER_SUFFIX_WORKER: '/worker',
+    VIEW_ORDER_SUFFIX_MANAGER: '/manager',
+    VIEW_ORDER_SUFFIX_CUSTOMER: '/customer',
+    CREATE_INVOICE_ROUTE: '/createInvoice/:orderid',
+    CREATE_INVOICE_PREFIX: '/createInvoice/',
+    VIEW_INVOICE_ROUTE: "/viewInvoice/:id",
+    VIEW_INVOICE_PREFIX: "/viewInvoice/",
+};
